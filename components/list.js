@@ -7,30 +7,61 @@ class List extends Component {
       names: [
          {
             id: 0,
-            name: 'Ben',
+            name: 'Akshay',
          },
          {
             id: 1,
-            name: 'Susan',
+            name: 'Trush',
          },
          {
             id: 2,
-            name: 'Robert',
+            name: 'Pravin',
          },
          {
             id: 3,
-            name: 'Mary',
+            name: 'BobiBhai',
+         },{
+            id: 4,
+            name: 'Aniket',
+         },
+         {
+            id: 5,
+            name: 'Abhijeet',
+         },
+         {
+            id: 6,
+            name: 'Mukund',
+         },
+         {
+            id: 7,
+            name: 'BobiBhai',
+         },{
+            id: 8,
+            name: 'Ron',
+         },
+         {
+            id: 9,
+            name: 'Dan',
+         },
+         {
+            id: 10,
+            name: 'Shaw',
+         },
+         {
+            id: 11,
+            name: 'Bhai',
          }
       ]
    }
    alertItemName = (item) => {
-      alert(item.name)
+      alert( "Hello "+item.name+ ",How are you...")
    }
    
 
    render() {
       return (
          <View>
+            
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
